@@ -1,3 +1,5 @@
+package com.css.spring.boot;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,5 +19,9 @@ public class FirstApp {
       SpringApplication application = new SpringApplication(FirstApp.class);
       //application.setBannerMode(Banner.Mode.OFF);
       application.run(args);
+
+      this.getClass().getClassLoader();
+      Thread.currentThread().getContextClassLoader()
+
   }
 }
